@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>RKPhotos Content Strategy</title>
+	
+	<meta name="description" content="This page of the portfolio describes my Content Strategy when making the website">
+	<meta name="keywords" content="RK, RKPhotos, Photos, Photography, Portfolio, Ryan, Kadlick, Content, Strategy">	
+	
+	<link href="Color%20Schemes.css" rel="stylesheet" type="text/css" title="MainColor">
+	<link href="Main%20Styles.css" rel="stylesheet" type="text/css">
+	<link href="Fonts.css" rel="stylesheet" type="text/css">
+    <link href="media.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Arvo|Poiret+One|Proza+Libre" rel="stylesheet">
+	<link href="BaW%20Color%20Scheme.css" rel="alternate stylesheet" type="text/css" title="BlackWhite">
+
+	<link href="Print%20Style.css" rel="stylesheet" type="text/css" media="print">	
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	<script type="text/javascript" src="stylesheetToggle.js"></script>
+	<script type="text/javascript">
+	$(function()
+		{
+			// Call stylesheet init so that all stylesheet changing functions 
+			// will work.
+			$.stylesheetInit();
+			
+			// This code loops through the stylesheets when you click the link with 
+			// an ID of "toggler" below.
+			$('#toggler').bind(
+				'click',
+				function(e)
+				{
+					$.stylesheetToggle();
+					return false;
+				}
+			);
+			
+			// When one of the styleswitch links is clicked then switch the stylesheet to
+			// the one matching the value of that links rel attribute.
+			$('.styleswitch').bind(
+				'click',
+				function(e)
+				{
+					$.stylesheetSwitch(this.getAttribute('rel'));
+					return false;
+				}
+			);
+		}
+	);
+	</script>
+
+</head>
+
+<body>
+	<div class="bread noPrint">
+		<a href="default.html">Homepage</a>
+		&nbsp; > &nbsp;
+		Content Strategy		
+	</div>
+	
+	<div class="sheets noPrint">
+		<a href="#1" rel="MainColor" class="styleswitch">Main Colors</a>
+		<a href="#2" rel="BlackWhite" class="styleswitch">Black and White</a>
+	</div>
+
+
+    <div class="flex-boxHead">
+        <div class="flex-boxHeadItem1">
+            <picture class="pictureBox">
+                <source media="(max-width: 526px)" srcset="table2.jpg" class="mainpic">
+                <img class="mainpic" alt="Girl sitting with guitar" src="table.jpg">
+            </picture>
+        </div>
+        
+        <div class="flex-boxHeadItem2">
+            <div class="head1">
+                <h1 class="title">RKPhotos</h1>
+            </div>
+        </div>
+        
+        <div class="flex-boxHeadItem3">
+            <div class="head3">
+                <h3 class="descriptionHead">The portfolio of Ryan Kadlick</h3>
+            </div>
+        </div>
+    </div>
+
+	<div class="homebar" id='myHomebar'>
+        <a href="default.html">Home</a>
+        <a href="motion.html">Motion</a>
+        <a href="aperture.html">Aperture</a>
+        <a href="documentation.html">Documentation</a>
+        <a href="words.html">Words</a>
+        <a href="contentstrategy.html">Content Strategy</a>
+        <!-- <li><a href="otherrequirements.html">Other Requirements</a></li> -->
+        <a href="Bibliography.html">Credits</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+
+	<div class="description">
+		<h2>Credits</h2>
+		<img class="seperate" src="lineseparator.fw.png" alt="">
+			<p>This is the link for the camera icon used on the homepage.</p>
+			<p><a href="https://www.iconfinder.com/icons/499291/card_envelope_heart_invitation_love_mail_wedding_iconhttps://www.iconfinder.com/icons/499291/card_envelope_heart_invitation_love_mail_wedding_icon">Camera Icon</a></p>
+			<p>This is the link used for the line seperator seen on every page/</p>
+			<p><a href="http://www.okclipart.com/decorative-line-art30kracdfvg/http://www.okclipart.com/decorative-line-art30kracdfvg/">Line seperator</a></p>
+			<p>Here is the link to Kevin's website, his code helped with the style sheet changing</p>
+			<p><a href="http://2008.kelvinluck.com/2009/07/jquery-styleswitch-now-with-toggle/http://2008.kelvinluck.com/2009/07/jquery-styleswitch-now-with-toggle/">Kevin's code</a></p>
+			<p>Here is the link to W3 schools page, their code helped me with the java-side of the 
+				slideshow on the homepage.</p>
+			<p><a href="http://www.w3schools.com/w3css/w3css_slideshow.asphttp://www.w3schools.com/w3css/w3css_slideshow.asp">W3 Schools</a></p>
+			<p>This site helped create the button you see for choosing next and previous in the slideshow.</p>
+			<p><a href="http://www.bestcssbuttongenerator.com/http://www.bestcssbuttongenerator.com/">Button Generator</a></p>
+	</div>
+    
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myHomebar");
+            if (x.className === "homebar") {
+                x.className += " responsive";
+            } else {
+                x.className = "homebar";
+            }
+        }
+    </script>
+
+	<div class="footer">
+		<img class="seperate" src="lineseparator.fw.png" alt="">
+		<br>
+		<a href="#top">&#8593; Back to Top</a>		
+   		<p>Ryan Kadlick &bull; Contact at: <a href="mailto:rkadlick415@g.rwu.edu?subject=Hello&body=Leave%20a%20comment.%20Please%20&amp;%20thank%20you.">rkadlick415@g.rwu.edu</a> &bull; Boston, Mass.</p> 
+		<img src="Random/R9.jpg" alt="Beach Shore in Turks and Caicos" width="1px" height="1px">	
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+/*   Fonts   */
+
+	.head1{
+		font-family: 'Arvo', Rockwell, Georgia, serif;
+		font-size:2.3em;
+	}
+	
+	.head3{
+		font-family: 'Poiret One', "Geometric 231 Lt BT", "Century Gothic", sans-serif;
+		font-size:1.5em;
+	}
+	
+	.homebar a{
+		font-family: 'Arvo', Rockwell, Georgia, serif;
+	}
+	
+	.description h2, .aside h2{
+		font-family: 'Poiret One', "Geometric 231 Lt BT", "Century Gothic", sans-serif;
+	}
+	
+	.description p, .flex-item ul, .footer, .bread, .aside p, .sheets, .other, .otherreq{
+		font-family: 'Proza Libre', "Segoe UI", Tahoma, sans-serif;
+	}
+
+    .flex-item ul li a {
+        text-decoration: none;
+    }
+	
+	.sheets{
+		font-size:10px;
+	}
+	.myButton{
+		font-family:Verdana, serif;
+		font-size:28px;
+		font-weight:bold;
+	}
+
+    .icon {
+        font-size: 1em;
+    }

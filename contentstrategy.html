@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>RKPhotos Content Strategy</title>
+	
+	<meta name="description" content="This page of the portfolio describes my Content Strategy when making the website">
+	<meta name="keywords" content="RK, RKPhotos, Photos, Photography, Portfolio, Ryan, Kadlick, Content, Strategy">	
+	
+	<link href="Color%20Schemes.css" rel="stylesheet" type="text/css" title="MainColor">
+	<link href="Main%20Styles.css" rel="stylesheet" type="text/css">
+	<link href="Fonts.css" rel="stylesheet" type="text/css">
+    <link href="media.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Arvo|Poiret+One|Proza+Libre" rel="stylesheet">
+	<link href="BaW%20Color%20Scheme.css" rel="alternate stylesheet" type="text/css" title="BlackWhite">
+
+	<link href="Print%20Style.css" rel="stylesheet" type="text/css" media="print">	
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	<script type="text/javascript" src="stylesheetToggle.js"></script>
+	<script type="text/javascript">
+	$(function()
+		{
+			// Call stylesheet init so that all stylesheet changing functions 
+			// will work.
+			$.stylesheetInit();
+			
+			// This code loops through the stylesheets when you click the link with 
+			// an ID of "toggler" below.
+			$('#toggler').bind(
+				'click',
+				function(e)
+				{
+					$.stylesheetToggle();
+					return false;
+				}
+			);
+			
+			// When one of the styleswitch links is clicked then switch the stylesheet to
+			// the one matching the value of that links rel attribute.
+			$('.styleswitch').bind(
+				'click',
+				function(e)
+				{
+					$.stylesheetSwitch(this.getAttribute('rel'));
+					return false;
+				}
+			);
+		}
+	);
+	</script>
+
+</head>
+
+<body>
+	<div class="bread noPrint">
+		<a href="default.html">Homepage</a>
+		&nbsp; > &nbsp;
+		Content Strategy		
+	</div>
+	
+	<div class="sheets noPrint">
+		<a href="#1" rel="MainColor" class="styleswitch">Main Colors</a>
+		<a href="#2" rel="BlackWhite" class="styleswitch">Black and White</a>
+	</div>
+
+
+    <div class="flex-boxHead">
+        <div class="flex-boxHeadItem1">
+            <picture class="pictureBox">
+                <source media="(max-width: 526px)" srcset="table2.jpg" class="mainpic">
+                <img class="mainpic" alt="Girl sitting with guitar" src="table.jpg">
+            </picture>
+        </div>
+        
+        <div class="flex-boxHeadItem2">
+            <div class="head1">
+                <h1 class="title">RKPhotos</h1>
+            </div>
+        </div>
+        
+        <div class="flex-boxHeadItem3">
+            <div class="head3">
+                <h3 class="descriptionHead">The portfolio of Ryan Kadlick</h3>
+            </div>
+        </div>
+    </div>
+
+	<div class="homebar" id='myHomebar'>
+        <a href="default.html">Home</a>
+    <a href="motion.html">Motion</a>
+			<a href="aperture.html">Aperture</a>
+			<a href="documentation.html">Documentation</a>
+			<a href="words.html">Words</a>
+			<a href="contentstrategy.html">Content Strategy</a>
+			<!-- <li><a href="otherrequirements.html">Other Requirements</a></li> -->
+			<a href="Bibliography.html">Credits</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+
+	<div class="description">
+		<h2>Content Strategy</h2>
+		<img class="seperate" src="lineseparator.fw.png" alt="">
+		<p>When we were assigned this project our first task was to come up wih our topic.
+			I had just been to my photography class prior to getting that task and thought,
+			"why not combine the two"</p>			
+		<p>The idea was to display all my photos as a portfolio, telling a story about how
+			I spent my semester in that class. My first idea was quickly put to shame when
+			realizing how large each image would be to show them all. So I had to narrow it
+			down first by each project and then I took the best ones of each project to 
+			display.</p>
+		<p>The first page I worked on was the homepage, specfically the header that appears on
+			every page. The first idea of mine for a header was to add a great picture to it. 
+			Then after the many attempts of playing with the layout, I finally achieved my goal with 
+			the header and could move on.</p>
+		<p>Since I had a base layout of the homepage done, my next task was to choose a color
+			scheme and fonts. I decided to find 3 professional fonts that all mesh well together
+			and carefully organized them among the website. One font for the regular text, one for 
+			main headings, and a final one for subheadings. The color scheme I orginally had was 
+			a simple modern black and white. Later, I realized I would need an alternate stylesheet
+			and relegated my simple black and white to the alternate. I did keep a dark tone with a 
+			bright compliment when I chose a dark blue with a light, transparent yellow compliment. </p>
+		<p>After choosing the colors I created the first page, because after the first page they were
+			thankfully all duplicates. Creating a box to display all the images equally spaced out was
+			the intention and it was accomplished. The only issue I faced was how small and undetailed 
+			the images became. So I decided to also make a large version of each image to be opened
+			in a new tab (to not disrupt the viewing of the site).</p>
+		<p>The tedious work of setting up the layout and linking all the images was finally over. The 
+			next step was to add in all the word descriptions in the entire site. After doing 
+			the descriptions everywhere, I created a checklist with the Word document on
+			what I was missing. I then proceeded to accomplish the missing parts whether it was 
+			implementing them into the site itself or the Other Requirements page.</p>	
+	</div>
+    
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myHomebar");
+            if (x.className === "homebar") {
+                x.className += " responsive";
+            } else {
+                x.className = "homebar";
+            }
+        }
+    </script>
+
+	<div class="footer">
+		<img class="seperate" src="lineseparator.fw.png" alt="">
+		<br>
+		<a href="#top">&#8593; Back to Top</a>		
+   		<p>Ryan Kadlick &bull; Contact at: <a href="mailto:rkadlick415@g.rwu.edu?subject=Hello&body=Leave%20a%20comment.%20Please%20&amp;%20thank%20you.">rkadlick415@g.rwu.edu</a> &bull; Boston, Mass.</p> 
+		<img src="Random/R9.jpg" alt="Beach Shore in Turks and Caicos" width="1px" height="1px">	
+	</div>
+</body>
+
+</html>

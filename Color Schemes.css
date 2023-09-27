@@ -1,0 +1,58 @@
+/*   Color Schemes   */
+
+/* Heading */
+	.head1, .homebar a, .homebar{
+		color:#FBFBFC;
+		background-color:#0B0B3B;
+		
+	}
+
+	.head3{
+		color:#0B0B3B;
+	}
+
+/* Nav Bar Hover */
+	.homebar li a:hover, .homebar li a:hover {
+		background-color:#7070B5;
+	}
+	
+/* Box for Pictures */	
+	.flex-container{
+		background-color:rgba(242, 227, 182, .5);
+		border:2px #524009 solid;
+	}
+	
+/* Regular text */
+	.aside, .description, .about, .flex-item li a, .footer, .bread, .sheets a, .other, .otherreq{
+		color:#010105;
+	}
+	
+/* Links Hover */
+	.sheets a:hover, .bread a:hover, .flex-item li a:hover{
+		color:#7070B5;
+	}
+	
+	.sheets a:focus, .bread a:focus, .flex-item li a:focus{
+		color:#7070B5;
+	}
+	
+/* Gradient Background */
+	.otherreq{
+		background: blue; /* For browsers that do not support gradients */
+    	background: -webkit-linear-gradient(purple, blue); /* For Safari 5.1 to 6.0 */
+    	background: -o-linear-gradient(purple, blue); /* For Opera 11.1 to 12.0 */
+    	background: -moz-linear-gradient(purple, blue); /* For Firefox 3.6 to 15 */
+    	background: linear-gradient(purple, blue); /* Standard syntax */	
+    	color:white;
+    }
+    
+/* Slideshow Buttons */
+    .myButton{
+		color:#adadad;
+		background-color:transparent;
+	}
+				
+	.myButton:hover {
+		background-color: rgba(128, 128, 128, .6);
+		color:#fff;
+	}

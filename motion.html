@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>RKPhotos Motion</title>
+	
+	<meta name="description" content="This is the page of RKPhotos portfolio that displays the pictures of motion.">
+	<meta name="keywords" content="RK, RKPhotos, Photos, Photography, Portfolio, Ryan, Kadlick, Motion, Shutter, Speed">		
+	
+	<link href="Color%20Schemes.css" rel="stylesheet" type="text/css" title="MainColor">
+	<link href="Main%20Styles.css" rel="stylesheet" type="text/css">
+    <link href="media.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Arvo|Poiret+One|Proza+Libre" rel="stylesheet">
+	<link href="Fonts.css" rel="stylesheet" type="text/css">
+	<link href="BaW%20Color%20Scheme.css" rel="alternate stylesheet" type="text/css" title="BlackWhite">
+	
+	<link href="Print%20Style.css" rel=" alternate stylesheet" type="text/css" title="Print" media="print">	
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	<script type="text/javascript" src="stylesheetToggle.js"></script>
+	<script type="text/javascript">
+	$(function()
+		{
+			// Call stylesheet init so that all stylesheet changing functions 
+			// will work.
+			$.stylesheetInit();
+			
+			// This code loops through the stylesheets when you click the link with 
+			// an ID of "toggler" below.
+			$('#toggler').bind(
+				'click',
+				function(e)
+				{
+					$.stylesheetToggle();
+					return false;
+				}
+			);
+			
+			// When one of the styleswitch links is clicked then switch the stylesheet to
+			// the one matching the value of that links rel attribute.
+			$('.styleswitch').bind(
+				'click',
+				function(e)
+				{
+					$.stylesheetSwitch(this.getAttribute('rel'));
+					return false;
+				}
+			);
+		}
+	);
+	</script>
+	
+
+</head>
+
+<body>
+	<div class="bread noPrint">
+		<a href="default.html">Homepage</a>
+		&nbsp; > &nbsp;
+		Motion		
+	</div>
+
+	<div class="sheets noPrint">
+		<a href="#1" rel="MainColor" class="styleswitch">Main Colors</a>
+		<a href="#2" rel="BlackWhite" class="styleswitch">Black and White</a>
+	</div>
+
+    <div class="flex-boxHead">
+        <div class="flex-boxHeadItem1">
+            <picture class="pictureBox">
+                <source media="(max-width: 526px)" srcset="table2.jpg" class="mainpic">
+                <img class="mainpic" alt="Girl sitting with guitar" src="table.jpg">
+            </picture>
+        </div>
+        
+        <div class="flex-boxHeadItem2">
+            <div class="head1">
+                <h1 class="title">RKPhotos</h1>
+            </div>
+        </div>
+        
+        <div class="flex-boxHeadItem3">
+            <div class="head3">
+                <h3 class="descriptionHead">The portfolio of Ryan Kadlick</h3>
+            </div>
+        </div>
+    </div>
+
+	<div class="homebar" id='myHomebar'>
+        <a href="default.html">Home</a>
+        <a href="motion.html">Motion</a>
+			<a href="aperture.html">Aperture</a>
+			<a href="documentation.html">Documentation</a>
+			<a href="words.html">Words</a>
+			<a href="contentstrategy.html">Content Strategy</a>
+			<!-- <li><a href="otherrequirements.html">Other Requirements</a></li> -->
+			<a href="Bibliography.html">Credits</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+
+	<div class="description">
+		<h2>Motion</h2>
+		<img class="seperate" alt="Line Seperator" src="lineseparator.fw.png" alt="">
+		<p>For the first project of the class, the goal was to learn about the
+			foundations of photography and two major components, shutter speed
+			and aperture. The shutter speed plays an important role in showing
+			motion in a photo. A slow shutter speed will create a blur that trails
+			behind whatever object or person is moving. A faster shutter speed
+			will stop the moving object in its tracks, making a speeding car
+			look parked. The goal of this project was to express motion in a still
+			photograph.</p>
+	</div>
+
+	<div class="flex-container">
+	
+		<div class="flex-item">
+			<img alt="American flag waving" src="Motion/Mot1S.jpg">
+			<nav>
+				<ul>
+					<li><a href="Motion/Mot1M.jpg" target="_blank">Larger Image</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="flex-item">
+			<img alt="Guy running on grass" src="Motion/Mot2S.jpg">
+			<nav>
+				<ul>
+					<li><a href="Motion/Mot2M.jpg" target="_blank">Larger Image</a></li>
+				</ul>
+			</nav>	
+		</div>
+		<div class="flex-item">
+			<img alt="Guy running on grass with spotlight around him" src="Motion/Mot3S.jpg">
+			<nav>
+				<ul>
+					<li><a href="Motion/Mot3M.jpg" target="_blank">Larger Image</a></li>
+				</ul>
+			</nav>	
+		</div>
+		<div class="flex-item">
+			<img alt="Windmills blowing" src="Motion/Mot4S.jpg">
+			<nav>
+				<ul>
+					<li><a href="Motion/Mot4M.jpg" target="_blank">Larger Image</a></li>
+				</ul>
+			</nav>
+		</div>		
+		<div class="flex-item">
+			<img alt="Guy blowing out blue smoke" src="Motion/Mot5S.jpg">
+			<nav>
+				<ul>
+					<li><a href="Motion/Mot5M.jpg" target="_blank">Larger Image</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="flex-item">
+			<img alt="Guy blowing out purple smoke" src="Motion/Mot6S.jpg">
+			<nav>
+				<ul>
+					<li><a href="Motion/Mot6M.jpg" target="_blank">Larger Image</a></li>
+				</ul>
+			</nav>	
+		</div>
+		<div class="flex-item">
+			<img alt="Car side mirror of moving car" src="Motion/Mot7S.jpg">
+			<nav>
+				<ul>
+					<li><a href="Motion/Mot7M.jpg" target="_blank">Larger Image</a></li>
+				</ul>
+			</nav>	
+		</div>
+		<div class="flex-item">
+			<img alt="Picture of field from moving car" src="Motion/Mot8S.jpg">
+			<nav>
+				<ul>
+					<li><a href="Motion/Mot8M.jpg" target="_blank">Larger Image</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="flex-item">
+			<img alt="Picture of corvette driving" src="Motion/Mot9S.jpg">
+			<nav>
+				<ul>
+					<li><a href="Motion/Mot9M.jpg" target="_blank">Larger Image</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="flex-item">
+			<img alt="Two guys throwing a rock" src="Motion/Mot10S.jpg">
+			<nav>
+				<ul>
+					<li><a href="Motion/Mot10M.jpg" target="_blank">Larger Image</a></li>
+				</ul>
+			</nav>	
+		</div>
+		<div class="flex-item">
+			<img alt="Two guys throwing a rock" src="Motion/Mot11S.jpg">
+			<nav>
+				<ul>
+					<li><a href="Motion/Mot11M.jpg" target="_blank">Larger Image</a></li>
+				</ul>
+			</nav>	
+		</div>
+		<div class="flex-item">
+			<img alt="Blurred car driving" src="Motion/Mot12S.jpg">
+			<nav>
+				<ul>
+					<li><a href="Motion/Mot12M.jpg" target="_blank">Larger Image</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="flex-item">
+			<img alt="Girl walking in a parking lot" src="Motion/Mot13S.jpg">
+			<nav>
+				<ul>
+					<li><a href="Motion/Mot13M.jpg" target="_blank">Larger Image</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="flex-item">
+			<img alt="Girl cracking an egg" src="Motion/Mot14S.jpg">
+			<nav>
+				<ul>
+					<li><a href="Motion/Mot14M.jpg" target="_blank">Larger Image</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="flex-item">
+			<img alt="Girl pouring brownie batter" src="Motion/Mot15S.jpg">
+			<nav>
+				<ul>
+					<li><a href="Motion/Mot15M.jpg" target="_blank">Larger Image</a></li>
+				</ul>
+			</nav>	
+		</div>
+		<div class="flex-item">
+			<img alt="Guy climbing over railing" src="Motion/Mot16S.jpg">
+			<nav>
+				<ul>
+					<li><a href="Motion/Mot16M.jpg" target="_blank">Larger Image</a></li>
+				</ul>
+			</nav>	
+		</div>		
+	</div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myHomebar");
+            if (x.className === "homebar") {
+                x.className += " responsive";
+            } else {
+                x.className = "homebar";
+            }
+        }
+    </script>
+    
+	<div class="footer">
+		<img class="seperate" src="lineseparator.fw.png" alt="">
+		<br>
+		<a href="#top">&#8593; Back to Top</a>		
+   		<p>Ryan Kadlick &bull; Contact at: <a href="mailto:rkadlick415@g.rwu.edu?subject=Hello&body=Please%20leave%20a%20comment.">rkadlick415@g.rwu.edu</a> &bull; Boston, Mass.</p> 
+		<img src="Random/R9.jpg" alt="Beach Shore in Turks and Caicos" width="1px" height="1px">	
+	</div>
+	
+</body>
+
+</html>

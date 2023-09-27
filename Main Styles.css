@@ -1,0 +1,212 @@
+/*   Other Styles   */
+
+/* Heading FlexBox */
+    .flex-boxHead{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .flex-boxHeadItem1 {
+        float: right;
+        width: 50%;
+    }
+
+    .flex-boxHeadItem2 {
+        float: left;
+        width: 50%;
+        height: 50%;
+        color: #FBFBFC;
+        background-color: #0B0B3B;
+        align-items: center;
+    }
+
+    .flex-boxHeadItem3 {
+        float: left;
+        width: 50%;
+    }
+
+/* Heading Styles */
+	.head1{
+		text-align:center;
+		float:left;
+        width: 100%;
+    }
+
+	.head3{
+		text-align: center;
+		float:left;	
+        width: 100%;
+	}
+
+/* Header Picture */	
+    .pictureBox {
+        display: inherit;
+    }
+
+	.mainpic {
+		padding:0;
+		width: 100%;
+		overflow:hidden;
+        display: inherit;
+	}
+
+/* Navigation Styles */
+	.homebar {
+	    overflow: hidden;
+	    width:100%;
+	    display: block;
+	    justify-content: space-around;    
+	}
+
+	.homebar a {
+	    text-decoration: none;
+        display: block;
+        float: left;
+        text-align: center;
+	}
+
+    .homebar a:hover {
+        background-color: #4d4d87;
+    }
+    .homebar .icon {
+        display: none;
+    }
+
+/* Stylesheet Switcher */
+	.sheets{
+		position:absolute;
+		top:3px;
+		right:3px;
+	}	
+
+/* Home Descriptions */
+	.description .slideshow {
+        text-align: center;
+        margin-top: 2%
+	}	
+	
+    .about {
+        margin-top: 5%;
+    }
+
+    .description {
+        margin: .5%;
+        width: 96%;
+    }
+
+    .description h2{
+        text-align: center;
+    }
+
+/* Sidebar */
+	.aside{
+		margin-top:1%;
+		float:right;
+	}
+	
+	.aside p{
+		text-align:left;
+	}
+
+    .profile {
+        float: left;
+        margin: 2%;
+    }
+
+/* Footer */
+	.footer{
+		position: relative;
+		height: 180px;
+		clear: both;
+		text-align:center;
+	}
+
+/* Pictures */
+	.flex-container{
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        background-color: rgba(242, 227, 182, .5);
+        border: 2px #524009 solid;
+        border-radius: 20px;
+	}
+
+/* Small pictures on each page */
+	.flex-item{
+        width: 253px;
+        margin: auto;
+        padding: 15px;
+	}
+
+/* Makes small pictures stay equal in div */
+	.stretch {
+	    width: 100%;
+	    display: inline-block;
+	    font-size: 0;
+	    line-height: 0;
+	}
+
+/* Link to larger pictures */
+	.flex-item ul{
+		list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
+	    width:100%;
+	    text-align: center;
+		list-style: none;
+	    display: flex;
+	    justify-content: space-around;
+	    position:relative;
+	}
+
+/* Line seperator */
+	.seperate{
+		text-align:center;
+		margin: auto;
+        display: block;
+	}
+	
+/* Slideshow and Slides */	
+	.slideshow{
+		position:relative;
+	}
+	
+	.slide{
+		margin:0 auto;
+	}
+		
+	.myButton {
+		
+		display:inline-block;
+		cursor:pointer;
+		
+		padding: 15px 15px 15px 15px;
+		text-decoration:none;
+		border-radius:35px;
+		margin: auto;
+	}
+
+	.btnleft{
+		position:relative;
+	}
+	
+	.btnright{
+		position:relative;
+	}
+
+/* Other Requirements Page */
+	.other{
+	   	position: fixed;
+	    width: 75px;
+		height: 90px;
+		position: fixed;
+		right: 0px;
+		top: 300px;
+	}
+	
+	#list{
+		list-style-type:none;
+	}	
+	

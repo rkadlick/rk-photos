@@ -1,0 +1,59 @@
+﻿/*   Alternate Color Scheme   */
+
+/* Heading */
+	.head1, .homebar li a, .homebar ul{
+		color:#FFF;
+		background-color:#000;
+		
+	}
+
+	.head3{
+		color:#000;
+	}
+
+	.homebar li a:hover, .homebar li a:focus {
+		background-color:#D3D3D3;
+	}
+
+/* Box for Pictures */
+	#pictures{
+		background-color:#E9E9E9;
+		border:2px #696969 solid;
+		
+	}
+
+/* Regular Text */
+	.aside, .description, .about, .smallpic li a, .footer, .bread, .sheets a, a{
+		color:#000;
+	}
+
+/* Link Hover */
+	.sheets a:hover, .bread a:hover, .smallpic li a:hover{
+		color:#D3D3D3;
+	}
+	
+	.sheets a:focus, .bread a:focus, .smallpic li a:focus{
+		color:#D3D3D3;
+	}
+	
+/* Gradient Background */
+	.otherreq{
+		background: black; /* For browsers that do not support gradients */
+    	background: -webkit-linear-gradient( lightgray, black); /* For Safari 5.1 to 6.0 */
+    	background: -o-linear-gradient(lightgray, black); /* For Opera 11.1 to 12.0 */
+    	background: -moz-linear-gradient(lightgray, black); /* For Firefox 3.6 to 15 */
+    	background: linear-gradient(lightgray, black); /* Standard syntax */	
+    	color:white;
+    }
+    
+/* Slideshow Buttons */
+    .myButton{
+		color:#adadad;
+		background-color:transparent;
+	}
+				
+	.myButton:hover {
+		background-color: rgba(128, 128, 128, .6);
+		color:#fff;
+	}
+
